@@ -3,21 +3,18 @@ import { useState, useRef } from "react";
 import html2canvas from "html2canvas";
 import jsPDF from "jspdf";
 import { Button } from "@/components/ui/button";
-import {
-  Dialog,
-  DialogClose,
-  DialogContent,
-  DialogTitle,
-  DialogTrigger,
-} from "@/components/ui/dialog";
-import { Download, DownloadIcon, Loader2 } from "lucide-react";
+import { Award, DownloadIcon, Loader2 } from "lucide-react";
 import { toast } from "sonner";
 import moment from "moment";
 import Image from "next/image";
+import { motion } from "framer-motion";
+import { QRCodeSVG } from "qrcode.react";
 
 interface CertificateInformationProps {
   recipientName: string;
   certificateId: string;
+  issueDate?: string;
+  issuedBy?: string;
 }
 
 export default function Certificate({
@@ -31,162 +28,287 @@ export default function Certificate({
   };
 
   const [isGenerating, setIsGenerating] = useState(false);
-  const [pdfPreviewUrl, setPdfPreviewUrl] = useState<string | null>(null);
   const [certificateId] = useState(generateCertificateId());
   const certificateRef = useRef<HTMLDivElement>(null);
 
-  const generatePDF = async () => {
+  const generateAndDownloadPDF = async () => {
     if (!certificateRef.current) return;
 
     setIsGenerating(true);
     try {
       const canvas = await html2canvas(certificateRef.current, {
-        scale: 2,
+        scale: 4,
         backgroundColor: "#ffffff",
-        logging: false, // Added fixed height for consistency
+        logging: false,
+        useCORS: true,
+        allowTaint: true,
       });
 
-      const imgData = canvas.toDataURL("image/png", 2.0);
+      const imgWidth = 297;
+      const imgHeight = 210;
+
       const pdf = new jsPDF({
         orientation: "landscape",
-        unit: "px",
-        format: [843, 595],
+        unit: "mm",
+        format: "a4",
       });
-      pdf.addImage(imgData, "PNG", 0, 0, 843, 595);
 
-      const pdfBlob = pdf.output("blob");
-      const pdfUrl = URL.createObjectURL(pdfBlob);
-      setPdfPreviewUrl(pdfUrl);
+      pdf.addImage(
+        canvas.toDataURL("image/jpeg", 1.0),
+        "JPEG",
+        0,
+        0,
+        imgWidth,
+        imgHeight
+      );
 
-      toast.success("Certificate generated successfully", {
-        description: "You can now preview or download your certificate.",
-      });
+      pdf.save(`certificate-${recipientName.replace(/\s+/g, "-")}.pdf`);
+      toast.success("Certificate downloaded successfully");
     } catch (error) {
-      toast.error("Error generating certificate", {
-        description: "Please try again later.",
-      });
+      toast.error("Error generating certificate");
       console.error("Error generating PDF:", error);
     } finally {
       setIsGenerating(false);
     }
   };
 
-  const downloadPDF = () => {
-    if (pdfPreviewUrl) {
+  const generateAndDownloadImage = async () => {
+    if (!certificateRef.current) return;
+
+    setIsGenerating(true);
+    try {
+      const canvas = await html2canvas(certificateRef.current, {
+        scale: 4,
+        backgroundColor: "#ffffff",
+        logging: false,
+        useCORS: true,
+        allowTaint: true,
+      });
+
       const link = document.createElement("a");
-      link.href = pdfPreviewUrl;
-      link.download = "certificate.pdf";
+      link.href = canvas.toDataURL("image/png", 1.0);
+      link.download = `certificate-${recipientName.replace(/\s+/g, "-")}.png`;
       link.click();
+
+      toast.success("Certificate image downloaded successfully");
+    } catch (error) {
+      toast.error("Error generating certificate image");
+      console.error("Error generating image:", error);
+    } finally {
+      setIsGenerating(false);
     }
   };
 
   return (
-    <div className="min-h-screen place-content-center">
-      <div className="relative w-full max-w-4xl mx-auto select-none">
-        <div
-          className="bg-white shadow-lg rounded-lg overflow-hidden aspect-video"
+    <motion.div
+      className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 p-8 flex items-center justify-center select-none"
+      initial={{ opacity: 0 }}
+      animate={{ opacity: 1 }}
+      transition={{ duration: 0.5 }}
+    >
+      <motion.div
+        className="w-full max-w-4xl mx-auto"
+        initial={{ scale: 0.9 }}
+        animate={{ scale: 1 }}
+        transition={{ duration: 0.5 }}
+      >
+        <motion.div
+          className="bg-white rounded-xl shadow-2xl overflow-hidden border border-slate-200"
           ref={certificateRef}
+          initial={{ y: 50, opacity: 0 }}
+          animate={{ y: 0, opacity: 1 }}
+          transition={{ duration: 0.5 }}
         >
-          <div className="relative aspect-[16/9]">
+          <div className="relative aspect-video">
             <Image
               src="/cert-bg.png"
-              className="aspect-video object-cover"
+              className="h-full w-full object-cover"
               width={1920}
               height={1080}
               alt="certificate background"
+              priority
             />
             <CertificateInformation
               recipientName={recipientName}
               certificateId={certificateId}
+              issueDate={new Date().toISOString()}
+              issuedBy="Shreyansh Awadhiya"
+              key={certificateId}
             />
           </div>
-        </div>
-
-        <Dialog>
-          <DialogTrigger asChild>
-            <Button
-              variant="ghost"
-              size="icon"
-              onClick={generatePDF}
-              disabled={isGenerating}
-              aria-live="polite"
-              className="absolute top-2 right-6 hover:bg-transparent [&_svg]:size-6"
-            >
-              {isGenerating ? (
-                <>
-                  <Loader2 className="w-4 h-4 mr-2 animate-spin" />
-                </>
-              ) : (
-                <>
-                  <DownloadIcon />
-                </>
-              )}
-            </Button>
-          </DialogTrigger>
-          <DialogContent className="max-w-6xl">
-            <DialogTitle>Certificate Preview</DialogTitle>
-            {pdfPreviewUrl && (
-              <div className="relative w-full aspect-video">
-                <iframe
-                  src={pdfPreviewUrl}
-                  className="absolute inset-0 w-full h-full aspect-square"
-                  title="Certificate Preview"
-                  style={{ border: "none" }}
-                />
-              </div>
-            )}
-            <div className="flex justify-end gap-4 p-4">
-              <DialogClose asChild>
-                <Button>Close</Button>
-              </DialogClose>
-              <Button onClick={downloadPDF} className="min-w-[140px]">
-                <Download className="w-4 h-4 mr-2" />
+        </motion.div>
+        <div className="mt-8 flex justify-center gap-4">
+          <Button
+            variant="default"
+            onClick={generateAndDownloadPDF}
+            disabled={isGenerating}
+            className="px-8 py-3 bg-gradient-to-r from-indigo-600 to-indigo-700 hover:from-indigo-700 hover:to-indigo-800 text-white shadow-lg rounded-full transition-all duration-200 text-sm font-medium"
+          >
+            {isGenerating ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Generating Certificate...
+              </>
+            ) : (
+              <>
+                <DownloadIcon className="w-4 h-4 mr-2" />
                 Download PDF
-              </Button>
-            </div>
-          </DialogContent>
-        </Dialog>
-      </div>
-    </div>
+              </>
+            )}
+          </Button>
+          <Button
+            variant="default"
+            onClick={generateAndDownloadImage}
+            disabled={isGenerating}
+            className="px-8 py-3 bg-gradient-to-r from-green-600 to-green-700 hover:from-green-700 hover:to-green-800 text-white shadow-lg rounded-full transition-all duration-200 text-sm font-medium"
+          >
+            {isGenerating ? (
+              <>
+                <Loader2 className="w-4 h-4 mr-2 animate-spin" />
+                Generating Image...
+              </>
+            ) : (
+              <>
+                <DownloadIcon className="w-4 h-4 mr-2" />
+                Download Image
+              </>
+            )}
+          </Button>
+        </div>
+      </motion.div>
+    </motion.div>
   );
 }
 
 function CertificateInformation({
   recipientName,
   certificateId,
+  issueDate,
+  issuedBy,
 }: Readonly<CertificateInformationProps>) {
+  const formattedDate = moment(issueDate).format("MMMM DD, YYYY");
+
   return (
-    <div className="absolute inset-0 flex flex-col justify-center items-center p-8 text-center">
-      <h1 className="text-4xl sm:text-5xl font-bold text-gray-800 mb-6">
-        Certificate of Completion
-      </h1>
-      <p className="text-2xl text-gray-600 italic mb-10">This certifies that</p>
-      <h2 className="text-3xl sm:text-4xl font-semibold text-gray-800 mb-8">
-        {recipientName}
-      </h2>
-      <p className="text-lg text-gray-600 leading-relaxed max-w-2xl mb-10">
-        has successfully completed their professional development and
-        demonstrated expertise in their field of study. This achievement
-        represents their dedication to excellence and continuous learning.
-      </p>
-      <div className="grid grid-cols-1 sm:grid-cols-3 gap-6 text-base">
-        <div>
-          <p className="font-medium text-gray-500">Certificate ID:</p>
-          <p className="font-mono text-gray-800">{certificateId}</p>
-        </div>
-        <div>
-          <p className="font-medium text-gray-500">Issue Date:</p>
-          <p className="text-gray-800">
-            {new Date().toLocaleDateString("en-US", {
-              year: "numeric",
-              month: "long",
-              day: "numeric",
-            })}
-          </p>
-        </div>
-        <div>
-          <p className="font-medium text-gray-500">Issued By:</p>
-          <p className="text-gray-800">Certificate Authority</p>
+    <div className="absolute inset-0 p-12">
+      {/* Decorative Elements */}
+      <div className="absolute -left-16 -top-16 h-64 w-64 rounded-full bg-gradient-to-br from-indigo-100/80 to-purple-100/80 blur-xl" />
+      <div className="absolute -bottom-16 -right-16 h-64 w-64 rounded-full bg-gradient-to-tl from-blue-100/80 to-indigo-100/80 blur-xl" />
+
+      {/* Main Content */}
+      <div className="relative h-full backdrop-blur-">
+        <div className="flex flex-col justify-center h-[calc(100%-80px)] gap-8">
+          {/* Header */}
+          <div className="flex justify-between items-center mt-16">
+            <div className="flex items-center gap-4">
+              <Award className="size-8 text-indigo-600" />
+              <svg className="w-96 h-8">
+                <defs>
+                  <linearGradient
+                    id="titleGradient"
+                    x1="0%"
+                    y1="0%"
+                    x2="100%"
+                    y2="0%"
+                  >
+                    <stop offset="0%" stopColor="#4F46E5" />
+                    <stop offset="100%" stopColor="#9333EA" />
+                  </linearGradient>
+                </defs>
+                <text
+                  x="0"
+                  y="24"
+                  className="text-3xl font-bold"
+                  fill="url(#titleGradient)"
+                >
+                  Certificate of Completion
+                </text>
+              </svg>
+            </div>
+            <div className="flex flex-col items-end bg-white/25 px-4 py-2 rounded-lg backdrop-blur-sm">
+              <p className="text-sm font-medium text-gray-600">
+                Certificate ID
+              </p>
+              <p className="font-mono text-sm font-semibold text-gray-900">
+                {certificateId}
+              </p>
+            </div>
+          </div>
+          {/* Main Content Grid */}
+          <div className="grid grid-cols-5 gap-12">
+            <div className="col-span-3 space-y-4">
+              {/* Recipient Name */}
+              <div className="space-y-2">
+                <p className="text-sm font-medium text-indigo-600">
+                  Proudly Presented To
+                </p>
+                <svg className="w-full h-12 mt-1">
+                  <defs>
+                    <linearGradient
+                      id="nameGradient"
+                      x1="0%"
+                      y1="0%"
+                      x2="100%"
+                      y2="0%"
+                    >
+                      <stop offset="0%" stopColor="#4F46E5" />{" "}
+                      {/* indigo-600 */}
+                      <stop offset="100%" stopColor="#9333EA" />{" "}
+                      {/* purple-600 */}
+                    </linearGradient>
+                  </defs>
+                  <text
+                    x="0"
+                    y="32"
+                    className="text-4xl font-bold"
+                    fill="url(#nameGradient)"
+                  >
+                    {recipientName}
+                  </text>
+                </svg>
+              </div>
+
+              {/* Description */}
+              <p className="text-gray-600 text-lg leading-relaxed">
+                for demonstrating outstanding achievement and exceptional
+                expertise in their field, meeting the highest standards of
+                professional excellence.
+              </p>
+
+              {/* Date and Signature */}
+              <div className="grid grid-cols-2 gap-8 pt-8">
+                <div className="bg-white/30 px-4 py-3 rounded-lg backdrop-blur-sm">
+                  <p className="text-sm font-medium text-indigo-600">
+                    Issue Date
+                  </p>
+                  <p className="mt-1 font-semibold text-gray-900">
+                    {formattedDate}
+                  </p>
+                </div>
+                <div className="bg-white/30 px-4 py-3 rounded-lg backdrop-blur-sm">
+                  <p className="text-sm font-medium text-indigo-600">
+                    Issued By
+                  </p>
+                  <p className="mt-1 font-semibold text-gray-900">{issuedBy}</p>
+                  <div className="mt-2 h-0.5 w-16 bg-gradient-to-r from-indigo-600 to-purple-600" />
+                </div>
+              </div>
+            </div>
+
+            {/* QR Code Section */}
+            <div className="col-span-2 flex flex-col items-center justify-center space-y-4 rounded-xl p-8 bg-white/20 backdrop-blur-sm border border-white/20 shadow-lg">
+              <div className="bg-white p-3 rounded-xl shadow-lg">
+                <QRCodeSVG
+                  value={`https://validator.com/certificate/${certificateId}`}
+                  size={120}
+                  level="H"
+                  includeMargin={true}
+                />
+              </div>
+              <p className="text-center text-sm font-medium text-gray-700">
+                Scan to verify
+              </p>
+            </div>
+          </div>
         </div>
       </div>
     </div>
