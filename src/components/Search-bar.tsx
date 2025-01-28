@@ -20,9 +20,8 @@ export default function Searchbar() {
         <div className="relative">
           <Input
             id={id}
-            className="peer h-16 w-full text-lg bg-background/80 backdrop-blur-sm border border-muted/50 rounded-lg shadow-lg transition-all duration-300 pl-14 pr-6
-            hover:border-primary/50 hover:bg-background/90 
-            focus:ring-2 focus:ring-primary/20"
+            className="peer h-16 w-full text-lg bg-background/80 backdrop-blur-sm rounded-lg shadow-lg transition-all duration-300 pl-14 pr-6
+            hover:bg-background/90 focus-visible:ring-slate-300"
             placeholder="Search by certificate ID or recipient name..."
             type="search"
           />

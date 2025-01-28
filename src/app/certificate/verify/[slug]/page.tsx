@@ -8,6 +8,7 @@ import {
 import { Badge } from "@/components/ui/badge";
 import { Button } from "@/components/ui/button";
 import { CheckCircle, XCircle, Download, Share2, Trophy } from "lucide-react";
+import Link from "next/link";
 
 export default async function CertificateVerification({
   params,
@@ -98,10 +99,12 @@ export default async function CertificateVerification({
             <Share2 className="w-4 h-4 mr-2" />
             Share
           </Button>
-          <Button className="flex items-center">
-            <Download className="w-4 h-4 mr-2" />
-            Download Certificate
-          </Button>
+          <Link href="/certificate" legacyBehavior passHref>
+            <Button className="flex items-center">
+              <Download className="w-4 h-4 mr-2" />
+              Download Certificate
+            </Button>
+          </Link>
         </CardFooter>
       </Card>
     </div>
