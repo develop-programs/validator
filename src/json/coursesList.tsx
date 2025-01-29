@@ -11,8 +11,16 @@ export const courseListData = [
           "Semantic markup exercise",
         ],
         resources: [
-          { title: "MDN HTML Guide", type: "article" },
-          { title: "HTML5 Specification", type: "link" },
+          { 
+            title: "MDN HTML Guide", 
+            type: "article",
+            url: "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+          },
+          { 
+            title: "HTML5 Specification", 
+            type: "link",
+            url: "https://html.spec.whatwg.org/"
+          }
         ],
       },
       {
@@ -20,8 +28,16 @@ export const courseListData = [
         topics: ["CSS Basics", "Selectors", "Box Model", "Typography"],
         assignments: ["Style the portfolio", "Create a responsive navbar"],
         resources: [
-          { title: "CSS Reference", type: "article" },
-          { title: "Google Fonts", type: "link" },
+          { 
+            title: "CSS Reference", 
+            type: "article",
+            url: "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+          },
+          { 
+            title: "Google Fonts", 
+            type: "link",
+            url: "https://fonts.google.com/"
+          }
         ],
       },
       {
@@ -32,8 +48,16 @@ export const courseListData = [
           "Media queries implementation",
         ],
         resources: [
-          { title: "Flexbox Guide", type: "article" },
-          { title: "CSS Grid Tutorial", type: "link" },
+          { 
+            title: "Flexbox Guide", 
+            type: "article",
+            url: "https://css-tricks.com/snippets/css/a-guide-to-flexbox/"
+          },
+          { 
+            title: "CSS Grid Tutorial", 
+            type: "link",
+            url: "https://cssgrid.io/"
+          }
         ],
       },
       {
@@ -41,8 +65,16 @@ export const courseListData = [
         topics: ["JavaScript Basics", "Variables", "Functions", "Control Flow"],
         assignments: ["Basic JavaScript exercises", "Simple calculator"],
         resources: [
-          { title: "JavaScript.info", type: "article" },
-          { title: "Eloquent JavaScript", type: "book" },
+          { 
+            title: "JavaScript.info", 
+            type: "article",
+            url: "https://javascript.info/"
+          },
+          { 
+            title: "Eloquent JavaScript", 
+            type: "book",
+            url: "https://eloquentjavascript.net/"
+          }
         ],
       },
       {
@@ -50,8 +82,16 @@ export const courseListData = [
         topics: ["DOM Manipulation", "Events", "Local Storage"],
         assignments: ["Interactive form validation", "Todo list application"],
         resources: [
-          { title: "DOM Documentation", type: "article" },
-          { title: "Event Reference", type: "link" },
+          { 
+            title: "DOM Documentation", 
+            type: "article",
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Document_Object_Model"
+          },
+          { 
+            title: "Event Reference", 
+            type: "link",
+            url: "https://developer.mozilla.org/en-US/docs/Web/Events"
+          }
         ],
       },
       {
@@ -59,8 +99,16 @@ export const courseListData = [
         topics: ["ES6+ Features", "Promises", "Async/Await"],
         assignments: ["Weather API integration", "Async data handling"],
         resources: [
-          { title: "ES6 Features Guide", type: "article" },
-          { title: "JavaScript Promises", type: "link" },
+          { 
+            title: "ES6 Features Guide", 
+            type: "article",
+            url: "https://www.w3schools.com/js/js_es6.asp"
+          },
+          { 
+            title: "JavaScript Promises", 
+            type: "link",
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Promise"
+          },
         ],
       },
       {
@@ -68,8 +116,16 @@ export const courseListData = [
         topics: ["APIs", "REST", "JSON", "Fetch API"],
         assignments: ["Build a RESTful API client", "Data visualization"],
         resources: [
-          { title: "REST API Design", type: "article" },
-          { title: "Fetch API Guide", type: "link" },
+          { 
+            title: "REST API Design", 
+            type: "article",
+            url: "https://restfulapi.net/"
+          },
+          { 
+            title: "Fetch API Guide", 
+            type: "link",
+            url: "https://developer.mozilla.org/en-US/docs/Web/API/Fetch_API"
+          },
         ],
       },
       {
@@ -77,8 +133,16 @@ export const courseListData = [
         topics: ["Bootstrap Framework", "Responsive Components"],
         assignments: ["Bootstrap portfolio redesign", "Responsive dashboard"],
         resources: [
-          { title: "Bootstrap Documentation", type: "article" },
-          { title: "Bootstrap Examples", type: "link" },
+          { 
+            title: "Bootstrap Documentation", 
+            type: "article",
+            url: "https://getbootstrap.com/docs/"
+          },
+          { 
+            title: "Bootstrap Examples", 
+            type: "link",
+            url: "https://getbootstrap.com/docs/5.3/examples/"
+          },
         ],
       },
       {
@@ -86,8 +150,16 @@ export const courseListData = [
         topics: ["Web Performance", "SEO Basics", "Accessibility"],
         assignments: ["Performance optimization", "SEO audit"],
         resources: [
-          { title: "Web.dev", type: "article" },
-          { title: "Lighthouse Tool", type: "link" },
+          { 
+            title: "Web.dev", 
+            type: "article",
+            url: "https://web.dev/learn"
+          },
+          { 
+            title: "Lighthouse Tool", 
+            type: "link",
+            url: "https://developers.google.com/web/tools/lighthouse"
+          },
         ],
       },
       {
@@ -95,8 +167,16 @@ export const courseListData = [
         topics: ["Version Control", "Git Basics", "GitHub"],
         assignments: ["Git workflow practice", "Collaborative project"],
         resources: [
-          { title: "Git Documentation", type: "article" },
-          { title: "GitHub Guides", type: "link" },
+          { 
+            title: "Git Documentation", 
+            type: "article",
+            url: "https://git-scm.com/doc"
+          },
+          { 
+            title: "GitHub Guides", 
+            type: "link",
+            url: "https://guides.github.com/"
+          },
         ],
       },
       {
@@ -104,8 +184,16 @@ export const courseListData = [
         topics: ["Web Security", "HTTPS", "Cross-Site Scripting"],
         assignments: ["Security audit", "Implement security measures"],
         resources: [
-          { title: "OWASP Guide", type: "article" },
-          { title: "Web Security Course", type: "course" },
+          { 
+            title: "OWASP Guide", 
+            type: "article",
+            url: "https://owasp.org/www-project-top-ten/"
+          },
+          { 
+            title: "Web Security Course", 
+            type: "course",
+            url: "https://www.coursera.org/learn/web-security"
+          },
         ],
       },
       {
@@ -113,8 +201,16 @@ export const courseListData = [
         topics: ["Final Project", "Portfolio Polish", "Deployment"],
         assignments: ["Complete portfolio website", "Deploy to hosting"],
         resources: [
-          { title: "Hosting Platforms", type: "article" },
-          { title: "Portfolio Examples", type: "link" },
+          { 
+            title: "Hosting Platforms", 
+            type: "article",
+            url: "https://www.netlify.com/blog/2021/03/16/best-web-hosting-platforms/"
+          },
+          { 
+            title: "Portfolio Examples", 
+            type: "link",
+            url: "https://www.behance.net/search/projects?field=web%20design"
+          },
         ],
       },
     ],
@@ -128,8 +224,16 @@ export const courseListData = [
         topics: ["MongoDB Basics", "NoSQL Concepts", "Data Modeling"],
         assignments: ["Setup MongoDB Atlas", "Basic CRUD operations"],
         resources: [
-          { title: "MongoDB University", type: "link" },
-          { title: "NoSQL Design Patterns", type: "article" },
+          { 
+            title: "MongoDB University", 
+            type: "link",
+            url: "https://university.mongodb.com/"
+          },
+          { 
+            title: "NoSQL Design Patterns", 
+            type: "article",
+            url: "https://www.mongodb.com/nosql-explained"
+          },
         ],
       },
       {
@@ -137,8 +241,16 @@ export const courseListData = [
         topics: ["MongoDB Advanced", "Aggregation", "Indexing"],
         assignments: ["Complex queries", "Database optimization"],
         resources: [
-          { title: "MongoDB Documentation", type: "article" },
-          { title: "Performance Best Practices", type: "link" },
+          { 
+            title: "MongoDB Documentation", 
+            type: "article",
+            url: "https://docs.mongodb.com/"
+          },
+          { 
+            title: "Performance Best Practices", 
+            type: "link",
+            url: "https://www.mongodb.com/blog/post/performance-best-practices"
+          },
         ],
       },
       {
@@ -146,8 +258,16 @@ export const courseListData = [
         topics: ["Express.js Fundamentals", "Routing", "Middleware"],
         assignments: ["Basic Express server", "Custom middleware"],
         resources: [
-          { title: "Express.js Guide", type: "article" },
-          { title: "Middleware Examples", type: "link" },
+          { 
+            title: "Express.js Guide", 
+            type: "article",
+            url: "https://expressjs.com/en/guide/routing.html"
+          },
+          { 
+            title: "Middleware Examples", 
+            type: "link",
+            url: "https://expressjs.com/en/resources/middleware.html"
+          },
         ],
       },
       {
@@ -155,8 +275,16 @@ export const courseListData = [
         topics: ["Express.js Advanced", "Authentication", "Authorization"],
         assignments: ["JWT implementation", "Role-based access"],
         resources: [
-          { title: "JWT.io", type: "link" },
-          { title: "OAuth Documentation", type: "article" },
+          { 
+            title: "JWT.io", 
+            type: "link",
+            url: "https://jwt.io/"
+          },
+          { 
+            title: "OAuth Documentation", 
+            type: "article",
+            url: "https://oauth.net/documentation/"
+          },
         ],
       },
       {
@@ -164,8 +292,16 @@ export const courseListData = [
         topics: ["React Fundamentals", "Components", "Props", "State"],
         assignments: ["Component library", "State management exercise"],
         resources: [
-          { title: "React Documentation", type: "article" },
-          { title: "Component Patterns", type: "link" },
+          { 
+            title: "React Documentation", 
+            type: "article",
+            url: "https://reactjs.org/docs/getting-started.html"
+          },
+          { 
+            title: "Component Patterns", 
+            type: "link",
+            url: "https://reactpatterns.com/"
+          },
         ],
       },
       {
@@ -173,8 +309,16 @@ export const courseListData = [
         topics: ["React Hooks", "Context API", "Custom Hooks"],
         assignments: ["Hook implementation", "Global state management"],
         resources: [
-          { title: "Hooks API Reference", type: "article" },
-          { title: "Context Guide", type: "link" },
+          { 
+            title: "Hooks API Reference", 
+            type: "article",
+            url: "https://reactjs.org/docs/hooks-reference.html"
+          },
+          { 
+            title: "Context Guide", 
+            type: "link",
+            url: "https://reactjs.org/docs/context.html"
+          },
         ],
       },
       {
@@ -182,8 +326,16 @@ export const courseListData = [
         topics: ["React Router", "Navigation", "Protected Routes"],
         assignments: ["Multi-page application", "Auth routing"],
         resources: [
-          { title: "React Router Docs", type: "article" },
-          { title: "Navigation Patterns", type: "link" },
+          { 
+            title: "React Router Docs", 
+            type: "article",
+            url: "https://reactrouter.com/docs/en/v6"
+          },
+          { 
+            title: "Navigation Patterns", 
+            type: "link",
+            url: "https://reactrouter.com/docs/en/v6/getting-started/overview"
+          },
         ],
       },
       {
@@ -191,8 +343,16 @@ export const courseListData = [
         topics: ["Redux", "Actions", "Reducers", "Store"],
         assignments: ["Redux implementation", "State management"],
         resources: [
-          { title: "Redux Documentation", type: "article" },
-          { title: "Redux Toolkit", type: "link" },
+          { 
+            title: "Redux Documentation", 
+            type: "article",
+            url: "https://redux.js.org/introduction/getting-started"
+          },
+          { 
+            title: "Redux Toolkit", 
+            type: "link",
+            url: "https://redux-toolkit.js.org/"
+          },
         ],
       },
       {
@@ -200,8 +360,16 @@ export const courseListData = [
         topics: ["Node.js Fundamentals", "Event Loop", "Modules"],
         assignments: ["Node.js server", "Module creation"],
         resources: [
-          { title: "Node.js Docs", type: "article" },
-          { title: "Event Loop Guide", type: "link" },
+          { 
+            title: "Node.js Docs", 
+            type: "article",
+            url: "https://nodejs.org/en/docs/"
+          },
+          { 
+            title: "Event Loop Guide", 
+            type: "link",
+            url: "https://nodejs.dev/learn/the-nodejs-event-loop"
+          },
         ],
       },
       {
@@ -209,8 +377,16 @@ export const courseListData = [
         topics: ["API Integration", "REST Architecture", "GraphQL"],
         assignments: ["RESTful API", "GraphQL server"],
         resources: [
-          { title: "REST Best Practices", type: "article" },
-          { title: "GraphQL Docs", type: "link" },
+          { 
+            title: "REST Best Practices", 
+            type: "article",
+            url: "https://restfulapi.net/best-practices/"
+          },
+          { 
+            title: "GraphQL Docs", 
+            type: "link",
+            url: "https://graphql.org/learn/"
+          },
         ],
       },
       {
@@ -218,8 +394,16 @@ export const courseListData = [
         topics: ["Testing", "Jest", "React Testing Library"],
         assignments: ["Unit tests", "Integration tests"],
         resources: [
-          { title: "Jest Documentation", type: "article" },
-          { title: "Testing Patterns", type: "link" },
+          { 
+            title: "Jest Documentation", 
+            type: "article",
+            url: "https://jestjs.io/docs/getting-started"
+          },
+          { 
+            title: "Testing Patterns", 
+            type: "link",
+            url: "https://testing-library.com/docs/react-testing-library/intro/"
+          },
         ],
       },
       {
@@ -227,8 +411,16 @@ export const courseListData = [
         topics: ["Deployment", "CI/CD", "Docker"],
         assignments: ["Deploy MERN app", "Container setup"],
         resources: [
-          { title: "Docker Guide", type: "article" },
-          { title: "CI/CD Tutorial", type: "link" },
+          { 
+            title: "Docker Guide", 
+            type: "article",
+            url: "https://docs.docker.com/get-started/"
+          },
+          { 
+            title: "CI/CD Tutorial", 
+            type: "link",
+            url: "https://www.atlassian.com/continuous-delivery/ci-vs-cd"
+          },
         ],
       },
       {
@@ -236,8 +428,16 @@ export const courseListData = [
         topics: ["Performance Optimization", "Code Splitting", "Lazy Loading"],
         assignments: ["Performance audit", "Optimization implementation"],
         resources: [
-          { title: "Performance Guide", type: "article" },
-          { title: "Optimization Tools", type: "link" },
+          { 
+            title: "Performance Guide", 
+            type: "article",
+            url: "https://web.dev/fast/"
+          },
+          { 
+            title: "Optimization Tools", 
+            type: "link",
+            url: "https://developers.google.com/web/tools"
+          },
         ],
       },
       {
@@ -245,8 +445,16 @@ export const courseListData = [
         topics: ["Final Project", "Full Stack Integration", "Documentation"],
         assignments: ["Complete MERN application", "Technical documentation"],
         resources: [
-          { title: "Documentation Best Practices", type: "article" },
-          { title: "Project Examples", type: "link" },
+          { 
+            title: "Documentation Best Practices", 
+            type: "article",
+            url: "https://www.writethedocs.org/guide/writing/best-practices/"
+          },
+          { 
+            title: "Project Examples", 
+            type: "link",
+            url: "https://github.com/enaqx/awesome-react"
+          },
         ],
       },
     ],
@@ -263,8 +471,16 @@ export const courseListData = [
           "Create low-fidelity wireframes",
         ],
         resources: [
-          { title: "Design Thinking Guide", type: "article" },
-          { title: "Wireframing Tools", type: "link" },
+          { 
+            title: "Design Thinking Guide", 
+            type: "article",
+            url: "https://www.ideou.com/pages/design-thinking"
+          },
+          { 
+            title: "Wireframing Tools", 
+            type: "link",
+            url: "https://www.creativebloq.com/wireframes/top-wireframing-tools-11121302"
+          },
         ],
       },
       {
@@ -272,8 +488,16 @@ export const courseListData = [
         topics: ["Prototyping", "User Testing", "Design Systems"],
         assignments: ["Build interactive prototype", "Conduct usability tests"],
         resources: [
-          { title: "Figma Tutorials", type: "article" },
-          { title: "Usability Testing Guidelines", type: "link" },
+          { 
+            title: "Figma Tutorials", 
+            type: "article",
+            url: "https://help.figma.com/hc/en-us/articles/360040514413-Learn-design"
+          },
+          { 
+            title: "Usability Testing Guidelines", 
+            type: "link",
+            url: "https://www.nngroup.com/articles/usability-testing-101/"
+          },
         ],
       },
       {
@@ -281,8 +505,16 @@ export const courseListData = [
         topics: ["Visual Design", "Color Theory", "Typography"],
         assignments: ["Create a style guide", "Design a landing page"],
         resources: [
-          { title: "Color Theory Guide", type: "article" },
-          { title: "Typography Handbook", type: "link" },
+          { 
+            title: "Color Theory Guide", 
+            type: "article",
+            url: "https://www.toptal.com/designers/visual/color-theory"
+          },
+          { 
+            title: "Typography Handbook", 
+            type: "link",
+            url: "https://www.typography.com/"
+          },
         ],
       },
       {
@@ -290,8 +522,16 @@ export const courseListData = [
         topics: ["Interaction Design", "Microinteractions", "Animation"],
         assignments: ["Design interactive elements", "Create animations"],
         resources: [
-          { title: "Interaction Design Guide", type: "article" },
-          { title: "Animation Principles", type: "link" },
+          { 
+            title: "Interaction Design Guide", 
+            type: "article",
+            url: "https://www.interaction-design.org/literature/topics/interaction-design"
+          },
+          { 
+            title: "Animation Principles", 
+            type: "link",
+            url: "https://uxdesign.cc/animation-principles-for-the-web-8a7c0c9b4c6a"
+          },
         ],
       },
       {
@@ -302,8 +542,16 @@ export const courseListData = [
           "Implement accessibility features",
         ],
         resources: [
-          { title: "Usability Heuristics", type: "article" },
-          { title: "Accessibility Guidelines", type: "link" },
+          { 
+            title: "Usability Heuristics", 
+            type: "article",
+            url: "https://www.nngroup.com/articles/ten-usability-heuristics/"
+          },
+          { 
+            title: "Accessibility Guidelines", 
+            type: "link",
+            url: "https://www.w3.org/WAI/standards-guidelines/wcag/"
+          },
         ],
       },
       {
@@ -311,8 +559,16 @@ export const courseListData = [
         topics: ["Design Tools", "Figma", "Sketch", "Adobe XD"],
         assignments: ["Create designs using Figma", "Prototype in Sketch"],
         resources: [
-          { title: "Figma Tutorials", type: "article" },
-          { title: "Sketch Documentation", type: "link" },
+          { 
+            title: "Figma Tutorials", 
+            type: "article",
+            url: "https://help.figma.com/hc/en-us/articles/360040514413-Learn-design"
+          },
+          { 
+            title: "Sketch Documentation", 
+            type: "link",
+            url: "https://www.sketch.com/docs/"
+          },
         ],
       },
       {
@@ -320,8 +576,16 @@ export const courseListData = [
         topics: ["Design Systems", "Component Libraries", "Design Tokens"],
         assignments: ["Build a design system", "Create reusable components"],
         resources: [
-          { title: "Design System Guide", type: "article" },
-          { title: "Component Library Examples", type: "link" },
+          { 
+            title: "Design System Guide", 
+            type: "article",
+            url: "https://www.designsystems.com/"
+          },
+          { 
+            title: "Component Library Examples", 
+            type: "link",
+            url: "https://www.smashingmagazine.com/2018/11/pattern-libraries-in-design-systems/"
+          },
         ],
       },
       {
@@ -332,8 +596,16 @@ export const courseListData = [
           "Develop portfolio case studies",
         ],
         resources: [
-          { title: "Portfolio Examples", type: "article" },
-          { title: "Case Study Templates", type: "link" },
+          { 
+            title: "Portfolio Examples", 
+            type: "article",
+            url: "https://www.behance.net/search/projects?field=web%20design"
+          },
+          { 
+            title: "Case Study Templates", 
+            type: "link",
+            url: "https://www.canva.com/templates/case-studies/"
+          },
         ],
       },
     ],
@@ -351,8 +623,16 @@ export const courseListData = [
         ],
         assignments: ["Implement HOCs", "Use render props"],
         resources: [
-          { title: "React Documentation", type: "article" },
-          { title: "Advanced Patterns", type: "link" },
+          { 
+            title: "React Documentation", 
+            type: "article",
+            url: "https://reactjs.org/docs/getting-started.html"
+          },
+          { 
+            title: "Advanced Patterns", 
+            type: "link",
+            url: "https://reactpatterns.com/"
+          },
         ],
       },
       {
@@ -360,8 +640,16 @@ export const courseListData = [
         topics: ["React Performance", "Memoization", "Reconciliation"],
         assignments: ["Optimize components", "Use React.memo"],
         resources: [
-          { title: "Performance Guide", type: "article" },
-          { title: "React.memo", type: "link" },
+          { 
+            title: "Performance Guide", 
+            type: "article",
+            url: "https://web.dev/fast/"
+          },
+          { 
+            title: "React.memo", 
+            type: "link",
+            url: "https://reactjs.org/docs/react-api.html#reactmemo"
+          },
         ],
       },
       {
@@ -369,8 +657,16 @@ export const courseListData = [
         topics: ["React Context", "Context API", "Global State Management"],
         assignments: ["Implement Context API", "Manage global state"],
         resources: [
-          { title: "Context API Guide", type: "article" },
-          { title: "State Management Patterns", type: "link" },
+          { 
+            title: "Context API Guide", 
+            type: "article",
+            url: "https://reactjs.org/docs/context.html"
+          },
+          { 
+            title: "State Management Patterns", 
+            type: "link",
+            url: "https://reactpatterns.com/"
+          },
         ],
       },
       {
@@ -378,8 +674,16 @@ export const courseListData = [
         topics: ["React Suspense", "Code Splitting", "Lazy Loading"],
         assignments: ["Implement Suspense", "Use lazy loading"],
         resources: [
-          { title: "Suspense Documentation", type: "article" },
-          { title: "Code Splitting Guide", type: "link" },
+          { 
+            title: "Suspense Documentation", 
+            type: "article",
+            url: "https://reactjs.org/docs/concurrent-mode-suspense.html"
+          },
+          { 
+            title: "Code Splitting Guide", 
+            type: "link",
+            url: "https://reactjs.org/docs/code-splitting.html"
+          },
         ],
       },
       {
@@ -387,8 +691,16 @@ export const courseListData = [
         topics: ["React Testing", "Jest", "React Testing Library"],
         assignments: ["Write unit tests", "Test components"],
         resources: [
-          { title: "Jest Documentation", type: "article" },
-          { title: "Testing Library", type: "link" },
+          { 
+            title: "Jest Documentation", 
+            type: "article",
+            url: "https://jestjs.io/docs/getting-started"
+          },
+          { 
+            title: "Testing Library", 
+            type: "link",
+            url: "https://testing-library.com/docs/react-testing-library/intro/"
+          },
         ],
       },
       {
@@ -396,8 +708,16 @@ export const courseListData = [
         topics: ["React Native", "Mobile Development", "Cross-Platform"],
         assignments: ["Build a mobile app", "Use React Native"],
         resources: [
-          { title: "React Native Docs", type: "article" },
-          { title: "Mobile Development Guide", type: "link" },
+          { 
+            title: "React Native Docs", 
+            type: "article",
+            url: "https://reactnative.dev/docs/getting-started"
+          },
+          { 
+            title: "Mobile Development Guide", 
+            type: "link",
+            url: "https://developer.android.com/guide"
+          },
         ],
       },
       {
@@ -409,8 +729,16 @@ export const courseListData = [
         ],
         assignments: ["Integrate GraphQL", "Use Apollo Client"],
         resources: [
-          { title: "GraphQL Docs", type: "article" },
-          { title: "Apollo Client Guide", type: "link" },
+          { 
+            title: "GraphQL Docs", 
+            type: "article",
+            url: "https://graphql.org/learn/"
+          },
+          { 
+            title: "Apollo Client Guide", 
+            type: "link",
+            url: "https://www.apollographql.com/docs/react/"
+          },
         ],
       },
       {
@@ -418,8 +746,16 @@ export const courseListData = [
         topics: ["State Management", "Redux", "MobX"],
         assignments: ["Implement Redux", "Use MobX"],
         resources: [
-          { title: "Redux Documentation", type: "article" },
-          { title: "MobX Guide", type: "link" },
+          { 
+            title: "Redux Documentation", 
+            type: "article",
+            url: "https://redux.js.org/introduction/getting-started"
+          },
+          { 
+            title: "MobX Guide", 
+            type: "link",
+            url: "https://mobx.js.org/README.html"
+          },
         ],
       },
       {
@@ -427,8 +763,16 @@ export const courseListData = [
         topics: ["React and TypeScript", "Type Safety", "Interfaces"],
         assignments: ["Use TypeScript with React", "Define interfaces"],
         resources: [
-          { title: "TypeScript Docs", type: "article" },
-          { title: "React TypeScript Guide", type: "link" },
+          { 
+            title: "TypeScript Docs", 
+            type: "article",
+            url: "https://www.typescriptlang.org/docs/"
+          },
+          { 
+            title: "React TypeScript Guide", 
+            type: "link",
+            url: "https://react-typescript-cheatsheet.netlify.app/"
+          },
         ],
       },
       {
@@ -436,8 +780,16 @@ export const courseListData = [
         topics: ["Final Project", "Advanced React Application", "Deployment"],
         assignments: ["Build an advanced React app", "Deploy the app"],
         resources: [
-          { title: "Deployment Guide", type: "article" },
-          { title: "Project Examples", type: "link" },
+          { 
+            title: "Deployment Guide", 
+            type: "article",
+            url: "https://vercel.com/docs"
+          },
+          { 
+            title: "Project Examples", 
+            type: "link",
+            url: "https://github.com/enaqx/awesome-react"
+          },
         ],
       },
     ],
@@ -454,8 +806,16 @@ export const courseListData = [
           "Use Bootstrap components",
         ],
         resources: [
-          { title: "HTML Guide", type: "article" },
-          { title: "Bootstrap Documentation", type: "link" },
+          { 
+            title: "HTML Guide", 
+            type: "article",
+            url: "https://developer.mozilla.org/en-US/docs/Web/HTML"
+          },
+          { 
+            title: "Bootstrap Documentation", 
+            type: "link",
+            url: "https://getbootstrap.com/docs/"
+          },
         ],
       },
       {
@@ -463,8 +823,16 @@ export const courseListData = [
         topics: ["JavaScript Fundamentals", "ES6+", "DOM Manipulation"],
         assignments: ["JavaScript exercises", "DOM projects"],
         resources: [
-          { title: "JavaScript Guide", type: "article" },
-          { title: "ES6 Features", type: "link" },
+          { 
+            title: "JavaScript Guide", 
+            type: "article",
+            url: "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+          },
+          { 
+            title: "ES6 Features", 
+            type: "link",
+            url: "https://www.w3schools.com/js/js_es6.asp"
+          },
         ],
       },
       {
@@ -472,8 +840,16 @@ export const courseListData = [
         topics: ["Version Control", "Git Basics", "GitHub"],
         assignments: ["Git workflow practice", "Collaborative project"],
         resources: [
-          { title: "Git Documentation", type: "article" },
-          { title: "GitHub Guides", type: "link" },
+          { 
+            title: "Git Documentation", 
+            type: "article",
+            url: "https://git-scm.com/doc"
+          },
+          { 
+            title: "GitHub Guides", 
+            type: "link",
+            url: "https://guides.github.com/"
+          },
         ],
       },
       {
@@ -481,8 +857,16 @@ export const courseListData = [
         topics: ["Node.js Basics", "Express.js", "REST APIs"],
         assignments: ["Build a REST API", "Use Express.js"],
         resources: [
-          { title: "Node.js Docs", type: "article" },
-          { title: "Express Guide", type: "link" },
+          { 
+            title: "Node.js Docs", 
+            type: "article",
+            url: "https://nodejs.org/en/docs/"
+          },
+          { 
+            title: "Express Guide", 
+            type: "link",
+            url: "https://expressjs.com/en/guide/routing.html"
+          },
         ],
       },
       {
@@ -490,8 +874,16 @@ export const courseListData = [
         topics: ["Database Fundamentals", "SQL", "NoSQL"],
         assignments: ["Database design", "CRUD operations"],
         resources: [
-          { title: "SQL Guide", type: "article" },
-          { title: "NoSQL Patterns", type: "link" },
+          { 
+            title: "SQL Guide", 
+            type: "article",
+            url: "https://www.w3schools.com/sql/"
+          },
+          { 
+            title: "NoSQL Patterns", 
+            type: "link",
+            url: "https://www.mongodb.com/nosql-explained"
+          },
         ],
       },
       {
@@ -499,8 +891,16 @@ export const courseListData = [
         topics: ["Authentication", "JWT", "OAuth"],
         assignments: ["Implement JWT", "Use OAuth"],
         resources: [
-          { title: "JWT Guide", type: "article" },
-          { title: "OAuth Documentation", type: "link" },
+          { 
+            title: "JWT Guide", 
+            type: "article",
+            url: "https://jwt.io/introduction/"
+          },
+          { 
+            title: "OAuth Documentation", 
+            type: "link",
+            url: "https://oauth.net/documentation/"
+          },
         ],
       },
       {
@@ -508,8 +908,16 @@ export const courseListData = [
         topics: ["React Basics", "Components", "State Management"],
         assignments: ["Build React components", "Manage state"],
         resources: [
-          { title: "React Documentation", type: "article" },
-          { title: "State Management Guide", type: "link" },
+          { 
+            title: "React Documentation", 
+            type: "article",
+            url: "https://reactjs.org/docs/getting-started.html"
+          },
+          { 
+            title: "State Management Guide", 
+            type: "link",
+            url: "https://reactpatterns.com/"
+          },
         ],
       },
       {
@@ -517,8 +925,16 @@ export const courseListData = [
         topics: ["React Advanced", "Hooks", "Context API"],
         assignments: ["Use React Hooks", "Implement Context API"],
         resources: [
-          { title: "Hooks Guide", type: "article" },
-          { title: "Context API Documentation", type: "link" },
+          { 
+            title: "Hooks Guide", 
+            type: "article",
+            url: "https://reactjs.org/docs/hooks-reference.html"
+          },
+          { 
+            title: "Context API Documentation", 
+            type: "link",
+            url: "https://reactjs.org/docs/context.html"
+          },
         ],
       },
       {
@@ -526,8 +942,16 @@ export const courseListData = [
         topics: ["Redux", "Actions", "Reducers", "Store"],
         assignments: ["Implement Redux", "Manage state with Redux"],
         resources: [
-          { title: "Redux Documentation", type: "article" },
-          { title: "Redux Toolkit", type: "link" },
+          { 
+            title: "Redux Documentation", 
+            type: "article",
+            url: "https://redux.js.org/introduction/getting-started"
+          },
+          { 
+            title: "Redux Toolkit", 
+            type: "link",
+            url: "https://redux-toolkit.js.org/"
+          },
         ],
       },
       {
@@ -535,8 +959,16 @@ export const courseListData = [
         topics: ["Testing", "Jest", "React Testing Library"],
         assignments: ["Write unit tests", "Test React components"],
         resources: [
-          { title: "Jest Documentation", type: "article" },
-          { title: "Testing Library", type: "link" },
+          { 
+            title: "Jest Documentation", 
+            type: "article",
+            url: "https://jestjs.io/docs/getting-started"
+          },
+          { 
+            title: "Testing Library", 
+            type: "link",
+            url: "https://testing-library.com/docs/react-testing-library/intro/"
+          },
         ],
       },
       {
@@ -544,8 +976,16 @@ export const courseListData = [
         topics: ["GraphQL", "Apollo Client", "Queries and Mutations"],
         assignments: ["Integrate GraphQL", "Use Apollo Client"],
         resources: [
-          { title: "GraphQL Docs", type: "article" },
-          { title: "Apollo Client Guide", type: "link" },
+          { 
+            title: "GraphQL Docs", 
+            type: "article",
+            url: "https://graphql.org/learn/"
+          },
+          { 
+            title: "Apollo Client Guide", 
+            type: "link",
+            url: "https://www.apollographql.com/docs/react/"
+          },
         ],
       },
       {
@@ -553,8 +993,16 @@ export const courseListData = [
         topics: ["Web Security", "HTTPS", "CORS"],
         assignments: ["Implement HTTPS", "Handle CORS"],
         resources: [
-          { title: "Web Security Guide", type: "article" },
-          { title: "CORS Documentation", type: "link" },
+          { 
+            title: "Web Security Guide", 
+            type: "article",
+            url: "https://owasp.org/www-project-top-ten/"
+          },
+          { 
+            title: "CORS Documentation", 
+            type: "link",
+            url: "https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS"
+          },
         ],
       },
       {
@@ -562,8 +1010,16 @@ export const courseListData = [
         topics: ["Performance Optimization", "Code Splitting", "Lazy Loading"],
         assignments: ["Optimize performance", "Implement lazy loading"],
         resources: [
-          { title: "Performance Guide", type: "article" },
-          { title: "Optimization Tools", type: "link" },
+          { 
+            title: "Performance Guide", 
+            type: "article",
+            url: "https://web.dev/fast/"
+          },
+          { 
+            title: "Optimization Tools", 
+            type: "link",
+            url: "https://developers.google.com/web/tools"
+          },
         ],
       },
       {
@@ -571,8 +1027,16 @@ export const courseListData = [
         topics: ["CI/CD", "Docker", "Deployment"],
         assignments: ["Set up CI/CD", "Use Docker"],
         resources: [
-          { title: "CI/CD Guide", type: "article" },
-          { title: "Docker Documentation", type: "link" },
+          { 
+            title: "CI/CD Guide", 
+            type: "article",
+            url: "https://www.atlassian.com/continuous-delivery/ci-vs-cd"
+          },
+          { 
+            title: "Docker Documentation", 
+            type: "link",
+            url: "https://docs.docker.com/get-started/"
+          },
         ],
       },
       {
@@ -580,8 +1044,16 @@ export const courseListData = [
         topics: ["Serverless Architecture", "AWS Lambda", "Azure Functions"],
         assignments: ["Build serverless functions", "Deploy to AWS/Azure"],
         resources: [
-          { title: "AWS Lambda Guide", type: "article" },
-          { title: "Azure Functions Documentation", type: "link" },
+          { 
+            title: "AWS Lambda Guide", 
+            type: "article",
+            url: "https://docs.aws.amazon.com/lambda/latest/dg/welcome.html"
+          },
+          { 
+            title: "Azure Functions Documentation", 
+            type: "link",
+            url: "https://docs.microsoft.com/en-us/azure/azure-functions/"
+          },
         ],
       },
       {
@@ -589,8 +1061,16 @@ export const courseListData = [
         topics: ["Final Project", "Full Stack Application", "Deployment"],
         assignments: ["Build a full stack app", "Deploy the app"],
         resources: [
-          { title: "Deployment Guide", type: "article" },
-          { title: "Project Examples", type: "link" },
+          { 
+            title: "Deployment Guide", 
+            type: "article",
+            url: "https://vercel.com/docs"
+          },
+          { 
+            title: "Project Examples", 
+            type: "link",
+            url: "https://github.com/enaqx/awesome-react"
+          },
         ],
       },
     ],

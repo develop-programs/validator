@@ -6,6 +6,12 @@ body {
   font-family: Arial, Helvetica, sans-serif;
 }
 
+:root {
+  --primary-rgb: 59, 130, 246;
+  /* Replace with your primary color RGB values */
+  --primary-color: rgb(var(--primary-rgb));
+}
+
 @layer base {
   :root {
     --background: 0 0% 100%;

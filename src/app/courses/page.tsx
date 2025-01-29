@@ -1,9 +1,11 @@
 "use client";
 import React, { useState } from "react";
-import { motion } from "framer-motion";
+import { motion } from "motion/react";
 import Image from "next/image";
 import { courseData } from "@/json/courses";
 import Link from "next/link";
+import { Badge } from "@/components/ui/badge";
+import BackButton from "@/components/BackButton";
 
 export default function CoursesPage() {
   const [selectedLevel, setSelectedLevel] = useState<string>("all");
@@ -47,7 +49,7 @@ export default function CoursesPage() {
               onClick={() => setSelectedLevel(level)}
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
-              className={`px-8 py-2.5 rounded-full backdrop-blur-sm ${
+              className={`px-8 py-1.5 rounded-full backdrop-blur-sm ${
                 selectedLevel === level
                   ? "bg-white/90 shadow-lg shadow-blue-500/30 text-blue-600 border-2 border-blue-500/50"
                   : "bg-white/30 hover:bg-white/50 text-gray-700 border border-white/60 hover:border-blue-300/50"
@@ -83,23 +85,23 @@ export default function CoursesPage() {
                   loading="lazy"
                   className="object-cover transition-transform duration-500 group-hover:scale-110"
                 />
-                <div className="absolute top-4 right-4 backdrop-blur-xl bg-white/40 text-blue-600 px-5 py-2 rounded-full text-sm font-semibold border border-white/60 shadow-lg">
+                <div className="absolute top-4 right-4 backdrop-blur-xl bg-white text-blue-600 px-5 py-2 rounded-full text-sm font-semibold border border-slate-700/20 shadow-lg">
                   {course.level}
                 </div>
               </div>
               <div className="p-8 flex-1 flex flex-col justify-between">
                 <div>
-                  <h3 className="text-2xl font-semibold mb-4 text-gray-800 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text">
+                  <h3 className="text-xl font-semibold mb-4 text-gray-800 bg-gradient-to-r from-gray-800 to-gray-600 bg-clip-text">
                     {course.title}
                   </h3>
-                  <p className="text-gray-600 leading-relaxed mb-4">
+                  <p className="text-sm text-gray-600 leading-relaxed mb-4">
                     {course.description}
                   </p>
                 </div>
                 <div className="flex justify-between items-center pt-6 border-t border-gray-200/50">
-                  <span className="text-blue-600 font-semibold text-lg">
+                  <Badge className="bg-green-600 hover:bg-green-600/90">
                     {course.duration}
-                  </span>
+                  </Badge>
                   <Link href={`/courses/${course.id}`} passHref legacyBehavior>
                     <motion.button
                       whileHover={{ scale: 1.05 }}
@@ -107,7 +109,7 @@ export default function CoursesPage() {
                       className="group relative px-6 py-2.5 overflow-hidden rounded-xl bg-gradient-to-r from-blue-600 to-purple-600 text-white transition-all duration-300"
                     >
                       <span className="relative z-10 font-medium">
-                        Enroll Now
+                        View Course
                       </span>
                       <div className="absolute inset-0 bg-gradient-to-r from-purple-600 to-blue-600 opacity-0 group-hover:opacity-100 transition-all duration-500 ease-out" />
                     </motion.button>
@@ -118,6 +120,7 @@ export default function CoursesPage() {
           ))}
         </motion.div>
       </main>
+      <BackButton />
     </div>
   );
 }
