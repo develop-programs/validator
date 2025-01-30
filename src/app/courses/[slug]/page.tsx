@@ -13,29 +13,6 @@ import { notFound } from "next/navigation";
 
 import { courseData } from "@/json/courses";
 import BackButton from "@/components/BackButton";
-// Add types
-type Resource = {
-  title: string;
-  url?: string;
-  type: "video" | "article" | "book" | "link";
-};
-
-type Week = {
-  topics: string | string[];
-  resources?: Resource[];
-};
-
-type Course = {
-  title: string;
-  description?: string;
-  image?: string;
-  weeks: Week[];
-};
-
-// Add ButtonLoading type
-type ButtonLoadingProps = {
-  loading?: boolean;
-};
 
 const JoinButton = ({ loading }: ButtonLoadingProps) => (
   <button

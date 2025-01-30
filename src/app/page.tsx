@@ -24,10 +24,13 @@ export default function HomePage() {
         >
           <h1 className="text-7xl font-bold mb-6 bg-clip-text text-transparent bg-gradient-to-r from-blue-600 to-blue-400 drop-shadow-sm">
             Learn to Code
-            <span className="block mt-2 animate-gradient">from a Developer</span>
+            <span className="block mt-2 animate-gradient">
+              from a Developer
+            </span>
           </h1>
           <p className="text-xl text-gray-600 mb-12 max-w-2xl mx-auto leading-relaxed">
-            Real-world programming expertise meets structured learning methodology
+            Real-world programming expertise meets structured learning
+            methodology
           </p>
         </motion.div>
 
@@ -98,6 +101,7 @@ export default function HomePage() {
                   data.level === "Advanced"
                 );
               })
+              .slice(0, 4)
               .map((course, index) => (
                 <CourseCard key={index} course={course} index={index} />
               ))}
@@ -114,11 +118,20 @@ export default function HomePage() {
           <div className="inline-flex flex-col sm:flex-row gap-6">
             <Link href="/courses" passHref>
               <button className="relative inline-flex items-center justify-center px-12 py-4 overflow-hidden font-medium transition-all bg-blue-600 rounded-xl hover:bg-blue-700 group">
-                <span className="absolute w-0 h-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:w-full group-hover:h-full group-hover:scale-150"></span>
+                <span className="absolute size-0 transition-all duration-300 ease-out bg-white rounded-full group-hover:size-96 group-hover:scale-150"></span>
                 <span className="relative text-white text-lg group-hover:text-blue-600 flex items-center">
                   Start Your Developer Journey
-                  <svg xmlns="http://www.w3.org/2000/svg" className="h-5 w-5 ml-2" viewBox="0 0 20 20" fill="currentColor">
-                    <path fillRule="evenodd" d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clipRule="evenodd" />
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    className="h-5 w-5 ml-2 group-hover:translate-x-4 transition-transform"
+                    viewBox="0 0 20 20"
+                    fill="currentColor"
+                  >
+                    <path
+                      fillRule="evenodd"
+                      d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z"
+                      clipRule="evenodd"
+                    />
                   </svg>
                 </span>
               </button>
@@ -134,8 +147,8 @@ export default function HomePage() {
           className="mt-32"
         >
           <p className="text-xl text-gray-600 text-center mb-12 max-w-2xl mx-auto">
-            From professional development to teaching the next generation of
-            developers
+            From professional developer to mentor, Commited to providing the
+            best learning experience for upcoming developers
           </p>
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12">
             <motion.div
