@@ -1,4 +1,3 @@
-
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
@@ -52,7 +51,9 @@ export function CourseCard({ course, index }: CourseCardProps) {
           </p>
         </div>
         <div className="flex justify-between items-center pt-4 border-t border-gray-100">
-          <Badge>{course.duration}</Badge>
+          <Badge className="bg-blue-600 hover:bg-blue-600/80 text-white">
+            {course.duration}
+          </Badge>
           <Link href={`/courses/${course.slug}`} passHref legacyBehavior>
             <Button variant="link" effect="hoverUnderline">
               <span>View Course</span>

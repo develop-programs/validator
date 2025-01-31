@@ -65,16 +65,16 @@ export default function CoursesPage() {
       />
 
       <main className="max-w-7xl mx-auto px-4 sm:px-6 py-12 sm:py-20 relative">
-        <div className="text-center mb-4">
-          <h1 className="text-4xl sm:text-5xl font-bold text-gray-800">
+        <div className="text-center mb-4 space-y-5">
+          <h1 className="text-4xl sm:text-5xl font-extrabold text-gray-800">
             Learn New Skills
           </h1>
-          <p className="text-xl text-gray-600 mt-2">
+          <p className="text-xl text-gray-600">
             Choose from a wide range of courses to learn new skills and grow
             your career.
           </p>
         </div>
-        <div className="mb-8 flex flex-col items-center gap-4">
+        <div className="mb-8 flex flex-col items-center gap-6">
           <div className="w-full max-w-md relative">
             <input
               type="text"
@@ -112,7 +112,7 @@ export default function CoursesPage() {
             Showing {filteredCourses.length}{" "}
             {filteredCourses.length === 1 ? "course" : "courses"}
           </p>
-          <div className="flex items-center gap-4 mt-4 bg-white/50 p-2 rounded-lg backdrop-blur-sm">
+          <div className="flex items-center gap-4 bg-white/50 p-2 rounded-lg backdrop-blur-sm">
             <button
               onClick={() => setIsGridView(true)}
               className={`p-2 rounded-md transition-all duration-300 ${
@@ -141,14 +141,6 @@ export default function CoursesPage() {
           isGridView={isGridView}
           filteredCourses={filteredCourses}
         />
-
-        <motion.button
-          whileHover={{ scale: 1.05 }}
-          whileTap={{ scale: 0.95 }}
-          className="fixed bottom-6 right-6 bg-gradient-to-r from-purple-600 to-blue-600 text-white px-5 py-3 rounded-full shadow-lg backdrop-blur-sm hover:shadow-xl transition-all duration-300"
-        >
-          Get Started
-        </motion.button>
       </main>
       <BackButton />
     </div>

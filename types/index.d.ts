@@ -26,3 +26,14 @@ export interface CourseDetail extends Course {
 export type ButtonLoadingProps = {
   loading?: boolean;
 };
+
+interface ButtonLoadingProps {
+  loading: boolean;
+}
+
+interface Resource {
+  title: string;
+  type?: "video" | "article" | "book";
+  url?: string;
+}
+

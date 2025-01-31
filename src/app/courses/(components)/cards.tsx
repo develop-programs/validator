@@ -65,7 +65,10 @@ export default function Cards({
                   alt={course.title}
                   fill
                   sizes="100%"
-                  className={cn(isGridView ? "rounded-t-2xl" : "rounded-xl")}
+                  className={cn(
+                    isGridView ? "rounded-t-2xl" : "rounded-xl",
+                    "brightness-90 object-cover"
+                  )}
                   priority
                 />
               </div>
@@ -89,7 +92,12 @@ export default function Cards({
                     )}
                   >
                     <div>
-                      <Badge className="bg-green-500 hover:bg-green-500/80 text-white">
+                      <Badge
+                        className={cn(
+                          isGridView ? "fixed top-4 right-4" : "text-xs",
+                          "shadow-lg bg-blue-600 bg-blue-600/80 text-white"
+                        )}
+                      >
                         {course.level.charAt(0).toUpperCase() +
                           course.level.slice(1)}
                       </Badge>
