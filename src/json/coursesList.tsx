@@ -1636,4 +1636,252 @@ export const courseListData = [
       },
     ],
   },
+  {
+    title: "data-structures-algorithms",
+    duration: "12 weeks",
+    weeks: [
+      {
+        weekNumber: 1,
+        topics: [
+          "Algorithm Analysis",
+          "Big O Notation",
+          "Space/Time Complexity",
+        ],
+        assignments: [
+          "Analyze algorithm complexity",
+          "Compare algorithm efficiency",
+        ],
+        resources: [
+          {
+            title: "Big O Notation Guide",
+            type: "article",
+            url: "https://www.bigocheatsheet.com/",
+          },
+          {
+            title: "Algorithm Analysis",
+            type: "link",
+            url: "https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/",
+          },
+        ],
+      },
+      {
+        weekNumber: 2,
+        topics: ["Arrays", "Linked Lists", "Dynamic Arrays"],
+        assignments: [
+          "Implement linked list operations",
+          "Array manipulation problems",
+        ],
+        resources: [
+          {
+            title: "Data Structures Basics",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/data-structures/",
+          },
+          {
+            title: "Linked List Tutorial",
+            type: "link",
+            url: "https://www.programiz.com/dsa/linked-list",
+          },
+        ],
+      },
+      {
+        weekNumber: 3,
+        topics: ["Stacks", "Queues", "Priority Queues"],
+        assignments: [
+          "Build stack implementation",
+          "Queue-based problem solving",
+        ],
+        resources: [
+          {
+            title: "Stack and Queue Guide",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/stack-data-structure/",
+          },
+          {
+            title: "Priority Queue Tutorial",
+            type: "link",
+            url: "https://www.programiz.com/dsa/priority-queue",
+          },
+        ],
+      },
+      {
+        weekNumber: 4,
+        topics: ["Trees", "Binary Trees", "BST", "AVL Trees"],
+        assignments: [
+          "Implement binary search tree",
+          "Tree traversal algorithms",
+        ],
+        resources: [
+          {
+            title: "Tree Data Structure",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/binary-tree-data-structure/",
+          },
+          {
+            title: "BST Operations",
+            type: "link",
+            url: "https://visualgo.net/en/bst",
+          },
+        ],
+      },
+      {
+        weekNumber: 5,
+        topics: ["Hashing", "Hash Tables", "Collision Resolution"],
+        assignments: [
+          "Build hash table implementation",
+          "Solve collision scenarios",
+        ],
+        resources: [
+          {
+            title: "Hashing Techniques",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/hashing-data-structure/",
+          },
+          {
+            title: "Hash Table Visualization",
+            type: "link",
+            url: "https://visualgo.net/en/hashtable",
+          },
+        ],
+      },
+      {
+        weekNumber: 6,
+        topics: ["Graphs", "Graph Traversal", "Shortest Paths"],
+        assignments: [
+          "Implement graph algorithms",
+          "Solve pathfinding problems",
+        ],
+        resources: [
+          {
+            title: "Graph Theory Basics",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/graph-data-structure-and-algorithms/",
+          },
+          {
+            title: "Graph Algorithms",
+            type: "link",
+            url: "https://visualgo.net/en/graphds",
+          },
+        ],
+      },
+      {
+        weekNumber: 7,
+        topics: ["Sorting Algorithms", "Comparison Sorts", "Linear Sorts"],
+        assignments: [
+          "Implement sorting algorithms",
+          "Compare sorting efficiencies",
+        ],
+        resources: [
+          {
+            title: "Sorting Algorithms",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/sorting-algorithms/",
+          },
+          {
+            title: "Sorting Visualizer",
+            type: "link",
+            url: "https://visualgo.net/en/sorting",
+          },
+        ],
+      },
+      {
+        weekNumber: 8,
+        topics: ["Searching Algorithms", "Binary Search", "Pattern Matching"],
+        assignments: [
+          "Implement search algorithms",
+          "Pattern matching problems",
+        ],
+        resources: [
+          {
+            title: "Search Algorithms Guide",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/searching-algorithms/",
+          },
+          {
+            title: "Binary Search Tutorial",
+            type: "link",
+            url: "https://www.programiz.com/dsa/binary-search",
+          },
+        ],
+      },
+      {
+        weekNumber: 9,
+        topics: ["Dynamic Programming", "Memoization", "Tabulation"],
+        assignments: ["Solve DP problems", "Optimize recursive solutions"],
+        resources: [
+          {
+            title: "Dynamic Programming",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/dynamic-programming/",
+          },
+          {
+            title: "DP Patterns",
+            type: "link",
+            url: "https://leetcode.com/discuss/general-discussion/458695/dynamic-programming-patterns",
+          },
+        ],
+      },
+      {
+        weekNumber: 10,
+        topics: ["Greedy Algorithms", "Divide & Conquer", "Backtracking"],
+        assignments: [
+          "Implement greedy solutions",
+          "Solve backtracking problems",
+        ],
+        resources: [
+          {
+            title: "Algorithm Strategies",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/algorithmic-paradigms/",
+          },
+          {
+            title: "Backtracking Guide",
+            type: "link",
+            url: "https://www.geeksforgeeks.org/backtracking-algorithms/",
+          },
+        ],
+      },
+      {
+        weekNumber: 11,
+        topics: ["String Algorithms", "Regular Expressions", "String Matching"],
+        assignments: [
+          "Implement string algorithms",
+          "Pattern matching problems",
+        ],
+        resources: [
+          {
+            title: "String Algorithms",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/string-algorithms/",
+          },
+          {
+            title: "Regex Guide",
+            type: "link",
+            url: "https://www.regular-expressions.info/",
+          },
+        ],
+      },
+      {
+        weekNumber: 12,
+        topics: [
+          "Advanced Topics",
+          "NP-Complete Problems",
+          "Approximation Algorithms",
+        ],
+        assignments: ["Solve complex problems", "Algorithm optimization"],
+        resources: [
+          {
+            title: "Advanced Algorithms",
+            type: "article",
+            url: "https://www.geeksforgeeks.org/advanced-data-structures/",
+          },
+          {
+            title: "Complex Problem Solving",
+            type: "link",
+            url: "https://cp-algorithms.com/",
+          },
+        ],
+      },
+    ],
+  },
 ];

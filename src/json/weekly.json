@@ -1,0 +1,1414 @@
+[
+    {
+        "referedTo": "typescript",
+        "resources": [
+            {
+                "title": "TypeScript Handbook",
+                "type": "article",
+                "url": "https://www.typescriptlang.org/docs/"
+            },
+            {
+                "title": "Advanced Types Guide",
+                "type": "article",
+                "url": "https://www.typescriptlang.org/docs/handbook/advanced-types.html"
+            },
+            {
+                "title": "Functions Guide",
+                "type": "article",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/functions.html"
+            },
+            {
+                "title": "Generics Guide",
+                "type": "article",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/generics.html"
+            },
+            {
+                "title": "Classes Guide",
+                "type": "article",
+                "url": "https://www.typescriptlang.org/docs/handbook/2/classes.html"
+            },
+            {
+                "title": "React TypeScript Guide",
+                "type": "article",
+                "url": "https://react-typescript-cheatsheet.netlify.app/"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "TypeScript Fundamentals",
+                    "Basic Types (number, string, boolean, array)",
+                    "Type Annotations and Inference",
+                    "Object Types and Interfaces",
+                    "Type Aliases vs Interfaces"
+                ],
+                "assignments": [
+                    "Basic type declaration exercises",
+                    "Interface implementation practice",
+                    "Type annotation challenges"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "Advanced Types",
+                    "Union and Intersection Types",
+                    "Literal Types and Type Narrowing",
+                    "Type Guards and Type Assertions",
+                    "Never and Unknown Types"
+                ],
+                "assignments": [
+                    "Implement complex type combinations",
+                    "Type narrowing exercises",
+                    "Type guard implementation"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Functions in TypeScript",
+                    "Function Types and Signatures",
+                    "Optional and Default Parameters",
+                    "Rest Parameters and Spread Operator",
+                    "Function Overloading"
+                ],
+                "assignments": [
+                    "Function type declarations",
+                    "Implement overloaded functions",
+                    "Build utility functions"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Generics in Depth",
+                    "Generic Types and Interfaces",
+                    "Generic Constraints",
+                    "Generic Classes and Methods",
+                    "Generic Utility Types"
+                ],
+                "assignments": [
+                    "Create generic components",
+                    "Implement generic data structures",
+                    "Use utility types"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "Object-Oriented TypeScript",
+                    "Classes and Interfaces",
+                    "Access Modifiers",
+                    "Abstract Classes",
+                    "Method Decorators"
+                ],
+                "assignments": [
+                    "Build class hierarchies",
+                    "Implement interfaces",
+                    "Create custom decorators"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "TypeScript with React",
+                    "Component Types",
+                    "Props and State Types",
+                    "Event Handling",
+                    "Custom Hooks with TypeScript"
+                ],
+                "assignments": [
+                    "Create typed React components",
+                    "Build custom hooks",
+                    "Type React events"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "Advanced Type Features",
+                    "Mapped Types",
+                    "Conditional Types",
+                    "Template Literal Types",
+                    "Indexed Access Types"
+                ],
+                "assignments": [
+                    "Create mapped type utilities",
+                    "Implement conditional types",
+                    "Build type transformations"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Testing in TypeScript",
+                    "Unit Testing with Jest",
+                    "Integration Testing",
+                    "Type Testing",
+                    "Test Coverage"
+                ],
+                "assignments": [
+                    "Write unit tests",
+                    "Test type definitions",
+                    "Setup test coverage"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "TypeScript Tooling",
+                    "TSConfig Deep Dive",
+                    "Type Declaration Files",
+                    "Project References",
+                    "Build Tools Integration"
+                ],
+                "assignments": [
+                    "Configure TypeScript projects",
+                    "Create declaration files",
+                    "Setup project references"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "Production TypeScript",
+                    "Performance Optimization",
+                    "Error Handling Patterns",
+                    "API Integration",
+                    "Best Practices and Design Patterns"
+                ],
+                "assignments": [
+                    "Build production application",
+                    "Implement error handling",
+                    "Optimize TypeScript code"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "Data Structures",
+        "resources": [
+            {
+                "title": "Big O Notation Guide",
+                "type": "article",
+                "url": "https://www.bigocheatsheet.com/"
+            },
+            {
+                "title": "Data Structures Basics",
+                "type": "article",
+                "url": "https://www.geeksforgeeks.org/data-structures/"
+            },
+            {
+                "title": "Algorithm Analysis",
+                "type": "link",
+                "url": "https://www.geeksforgeeks.org/analysis-algorithms-big-o-analysis/"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "Algorithm Analysis",
+                    "Big O Notation",
+                    "Space/Time Complexity"
+                ],
+                "assignments": [
+                    "Analyze algorithm complexity",
+                    "Compare algorithm efficiency"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "Arrays",
+                    "Linked Lists",
+                    "Dynamic Arrays"
+                ],
+                "assignments": [
+                    "Implement linked list operations",
+                    "Array manipulation problems"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Stacks",
+                    "Queues",
+                    "Priority Queues"
+                ],
+                "assignments": [
+                    "Build stack implementation",
+                    "Queue-based problem solving"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Trees",
+                    "Binary Trees",
+                    "BST",
+                    "AVL Trees"
+                ],
+                "assignments": [
+                    "Implement binary search tree",
+                    "Tree traversal algorithms"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "Hashing",
+                    "Hash Tables",
+                    "Collision Resolution"
+                ],
+                "assignments": [
+                    "Build hash table implementation",
+                    "Solve collision scenarios"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "Graphs",
+                    "Graph Traversal",
+                    "Shortest Paths"
+                ],
+                "assignments": [
+                    "Implement graph algorithms",
+                    "Solve pathfinding problems"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "Sorting Algorithms",
+                    "Comparison Sorts",
+                    "Linear Sorts"
+                ],
+                "assignments": [
+                    "Implement sorting algorithms",
+                    "Compare sorting efficiencies"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Searching Algorithms",
+                    "Binary Search",
+                    "Pattern Matching"
+                ],
+                "assignments": [
+                    "Implement search algorithms",
+                    "Pattern matching problems"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "Dynamic Programming",
+                    "Memoization",
+                    "Tabulation"
+                ],
+                "assignments": [
+                    "Solve DP problems",
+                    "Optimize recursive solutions"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "Greedy Algorithms",
+                    "Divide & Conquer",
+                    "Backtracking"
+                ],
+                "assignments": [
+                    "Implement greedy solutions",
+                    "Solve backtracking problems"
+                ]
+            },
+            {
+                "weekNumber": 11,
+                "topics": [
+                    "String Algorithms",
+                    "Regular Expressions",
+                    "String Matching"
+                ],
+                "assignments": [
+                    "Implement string algorithms",
+                    "Pattern matching problems"
+                ]
+            },
+            {
+                "weekNumber": 12,
+                "topics": [
+                    "Advanced Topics",
+                    "NP-Complete Problems",
+                    "Approximation Algorithms"
+                ],
+                "assignments": [
+                    "Solve complex problems",
+                    "Algorithm optimization"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "Docker",
+        "resources": [
+            {
+                "title": "Docker Overview",
+                "type": "article",
+                "url": "https://docs.docker.com/get-started/overview/"
+            },
+            {
+                "title": "Dockerfile Best Practices",
+                "type": "article",
+                "url": "https://docs.docker.com/develop/develop-images/dockerfile_best-practices/"
+            },
+            {
+                "title": "Docker Compose Guide",
+                "type": "article",
+                "url": "https://docs.docker.com/compose/gettingstarted/"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "Docker Basics",
+                    "Containers",
+                    "Images"
+                ],
+                "assignments": [
+                    "Create Docker images",
+                    "Run containers"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "Dockerfile",
+                    "Building Images",
+                    "Multi-stage Builds",
+                    "Optimizing Image Size"
+                ],
+                "assignments": [
+                    "Write Dockerfiles",
+                    "Build optimized images"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Docker Compose",
+                    "Multi-container Apps",
+                    "Network Configuration",
+                    "Volume Management"
+                ],
+                "assignments": [
+                    "Create multi-container setup",
+                    "Configure networking"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Container Orchestration",
+                    "Docker Swarm",
+                    "Service Discovery",
+                    "Load Balancing"
+                ],
+                "assignments": [
+                    "Setup Docker Swarm",
+                    "Deploy services"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "Container Security",
+                    "Image Scanning",
+                    "Security Best Practices",
+                    "Secret Management"
+                ],
+                "assignments": [
+                    "Implement security measures",
+                    "Scan containers"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "Monitoring & Logging",
+                    "Container Health Checks",
+                    "Log Aggregation",
+                    "Metrics Collection"
+                ],
+                "assignments": [
+                    "Setup monitoring",
+                    "Configure logging"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "CI/CD with Docker",
+                    "Automated Builds",
+                    "Container Registry",
+                    "Deployment Strategies"
+                ],
+                "assignments": [
+                    "Setup CI/CD pipeline",
+                    "Implement automated deployment"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Production Deployment",
+                    "Container Orchestration Platforms",
+                    "Scaling",
+                    "High Availability"
+                ],
+                "assignments": [
+                    "Deploy to production",
+                    "Configure high availability"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "git-github",
+        "resources": [
+            {
+                "title": "Git Basics Guide",
+                "type": "article",
+                "url": "https://git-scm.com/book/en/v2/Getting-Started-Git-Basics"
+            },
+            {
+                "title": "Git Branching",
+                "type": "article",
+                "url": "https://git-scm.com/book/en/v2/Git-Branching-Branches-in-a-Nutshell"
+            },
+            {
+                "title": "GitHub Flow",
+                "type": "article",
+                "url": "https://docs.github.com/en/get-started/quickstart/github-flow"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "Git Basics",
+                    "Repository Setup",
+                    "Basic Commands"
+                ],
+                "assignments": [
+                    "Initialize repository",
+                    "Basic git operations"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "Branching",
+                    "Merging",
+                    "Conflict Resolution"
+                ],
+                "assignments": [
+                    "Create branches",
+                    "Merge changes",
+                    "Resolve conflicts"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "GitHub Workflows",
+                    "Pull Requests",
+                    "Code Reviews"
+                ],
+                "assignments": [
+                    "Create PR",
+                    "Review code",
+                    "Collaborate"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "CI/CD",
+                    "GitHub Actions",
+                    "Automated Testing"
+                ],
+                "assignments": [
+                    "Setup CI pipeline",
+                    "Create GitHub Actions workflow"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "Git Advanced",
+                    "Rebase",
+                    "Cherry-pick"
+                ],
+                "assignments": [
+                    "Interactive rebase",
+                    "Cherry-pick commits"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "Project Management",
+                    "Issues",
+                    "Projects"
+                ],
+                "assignments": [
+                    "Manage project board",
+                    "Track issues"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "Full Stack",
+        "resources": [
+            {
+                "title": "HTML Guide",
+                "type": "article",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/HTML"
+            },
+            {
+                "title": "JavaScript Guide",
+                "type": "article",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/JavaScript"
+            },
+            {
+                "title": "Node.js Docs",
+                "type": "article",
+                "url": "https://nodejs.org/en/docs/"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "HTML & CSS Basics",
+                    "Responsive Design",
+                    "Bootstrap"
+                ],
+                "assignments": [
+                    "Create a responsive webpage",
+                    "Use Bootstrap components"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "JavaScript Fundamentals",
+                    "ES6+",
+                    "DOM Manipulation"
+                ],
+                "assignments": [
+                    "JavaScript exercises",
+                    "DOM projects"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Version Control",
+                    "Git Basics",
+                    "GitHub"
+                ],
+                "assignments": [
+                    "Git workflow practice",
+                    "Collaborative project"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Node.js Basics",
+                    "Express.js",
+                    "REST APIs"
+                ],
+                "assignments": [
+                    "Build a REST API",
+                    "Use Express.js"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "Database Fundamentals",
+                    "SQL",
+                    "NoSQL"
+                ],
+                "assignments": [
+                    "Database design",
+                    "CRUD operations"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "Authentication",
+                    "JWT",
+                    "OAuth"
+                ],
+                "assignments": [
+                    "Implement JWT",
+                    "Use OAuth"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "React Basics",
+                    "Components",
+                    "State Management"
+                ],
+                "assignments": [
+                    "Build React components",
+                    "Manage state"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "React Advanced",
+                    "Hooks",
+                    "Context API"
+                ],
+                "assignments": [
+                    "Use React Hooks",
+                    "Implement Context API"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "Redux",
+                    "Actions",
+                    "Reducers",
+                    "Store"
+                ],
+                "assignments": [
+                    "Implement Redux",
+                    "Manage state with Redux"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "Testing",
+                    "Jest",
+                    "React Testing Library"
+                ],
+                "assignments": [
+                    "Write unit tests",
+                    "Test React components"
+                ]
+            },
+            {
+                "weekNumber": 11,
+                "topics": [
+                    "GraphQL",
+                    "Apollo Client",
+                    "Queries and Mutations"
+                ],
+                "assignments": [
+                    "Integrate GraphQL",
+                    "Use Apollo Client"
+                ]
+            },
+            {
+                "weekNumber": 12,
+                "topics": [
+                    "Web Security",
+                    "HTTPS",
+                    "CORS"
+                ],
+                "assignments": [
+                    "Implement HTTPS",
+                    "Handle CORS"
+                ]
+            },
+            {
+                "weekNumber": 13,
+                "topics": [
+                    "Performance Optimization",
+                    "Code Splitting",
+                    "Lazy Loading"
+                ],
+                "assignments": [
+                    "Optimize performance",
+                    "Implement lazy loading"
+                ]
+            },
+            {
+                "weekNumber": 14,
+                "topics": [
+                    "CI/CD",
+                    "Docker",
+                    "Deployment"
+                ],
+                "assignments": [
+                    "Set up CI/CD",
+                    "Use Docker"
+                ]
+            },
+            {
+                "weekNumber": 15,
+                "topics": [
+                    "Serverless Architecture",
+                    "AWS Lambda",
+                    "Azure Functions"
+                ],
+                "assignments": [
+                    "Build serverless functions",
+                    "Deploy to AWS/Azure"
+                ]
+            },
+            {
+                "weekNumber": 16,
+                "topics": [
+                    "Final Project",
+                    "Full Stack Application",
+                    "Deployment"
+                ],
+                "assignments": [
+                    "Build a full stack app",
+                    "Deploy the app"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "React.js",
+        "resources": [
+            {
+                "title": "React Documentation",
+                "type": "article",
+                "url": "https://reactjs.org/docs/getting-started.html"
+            },
+            {
+                "title": "Performance Guide",
+                "type": "article",
+                "url": "https://web.dev/fast/"
+            },
+            {
+                "title": "Context API Guide",
+                "type": "article",
+                "url": "https://reactjs.org/docs/context.html"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "React Advanced Concepts",
+                    "Higher-Order Components",
+                    "Render Props"
+                ],
+                "assignments": [
+                    "Implement HOCs",
+                    "Use render props"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "React Performance",
+                    "Memoization",
+                    "Reconciliation"
+                ],
+                "assignments": [
+                    "Optimize components",
+                    "Use React.memo"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "React Context",
+                    "Context API",
+                    "Global State Management"
+                ],
+                "assignments": [
+                    "Implement Context API",
+                    "Manage global state"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "React Suspense",
+                    "Code Splitting",
+                    "Lazy Loading"
+                ],
+                "assignments": [
+                    "Implement Suspense",
+                    "Use lazy loading"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "React Testing",
+                    "Jest",
+                    "React Testing Library"
+                ],
+                "assignments": [
+                    "Write unit tests",
+                    "Test components"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "React Native",
+                    "Mobile Development",
+                    "Cross-Platform"
+                ],
+                "assignments": [
+                    "Build a mobile app",
+                    "Use React Native"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "GraphQL with React",
+                    "Apollo Client",
+                    "Queries and Mutations"
+                ],
+                "assignments": [
+                    "Integrate GraphQL",
+                    "Use Apollo Client"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "State Management",
+                    "Redux",
+                    "MobX"
+                ],
+                "assignments": [
+                    "Implement Redux",
+                    "Use MobX"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "React and TypeScript",
+                    "Type Safety",
+                    "Interfaces"
+                ],
+                "assignments": [
+                    "Use TypeScript with React",
+                    "Define interfaces"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "Final Project",
+                    "Advanced React Application",
+                    "Deployment"
+                ],
+                "assignments": [
+                    "Build an advanced React app",
+                    "Deploy the app"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "Web Development Fundamentals",
+        "resources": [
+            {
+                "title": "MDN HTML Guide",
+                "type": "article",
+                "url": "https://developer.mozilla.org/en-US/docs/Learn/HTML"
+            },
+            {
+                "title": "CSS Reference",
+                "type": "article",
+                "url": "https://developer.mozilla.org/en-US/docs/Web/CSS/Reference"
+            },
+            {
+                "title": "JavaScript.info",
+                "type": "article",
+                "url": "https://javascript.info/"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "HTML Fundamentals",
+                    "Document Structure",
+                    "Semantic HTML"
+                ],
+                "assignments": [
+                    "Create a personal portfolio structure",
+                    "Semantic markup exercise"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "CSS Basics",
+                    "Selectors",
+                    "Box Model",
+                    "Typography"
+                ],
+                "assignments": [
+                    "Style the portfolio",
+                    "Create a responsive navbar"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "CSS Layout",
+                    "Flexbox",
+                    "Grid",
+                    "Responsive Design"
+                ],
+                "assignments": [
+                    "Build a responsive grid layout",
+                    "Media queries implementation"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "JavaScript Basics",
+                    "Variables",
+                    "Functions",
+                    "Control Flow"
+                ],
+                "assignments": [
+                    "Basic JavaScript exercises",
+                    "Simple calculator"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "DOM Manipulation",
+                    "Events",
+                    "Local Storage"
+                ],
+                "assignments": [
+                    "Interactive form validation",
+                    "Todo list application"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "ES6+ Features",
+                    "Promises",
+                    "Async/Await"
+                ],
+                "assignments": [
+                    "Weather API integration",
+                    "Async data handling"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "APIs",
+                    "REST",
+                    "JSON",
+                    "Fetch API"
+                ],
+                "assignments": [
+                    "Build a RESTful API client",
+                    "Data visualization"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Bootstrap Framework",
+                    "Responsive Components"
+                ],
+                "assignments": [
+                    "Bootstrap portfolio redesign",
+                    "Responsive dashboard"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "Web Performance",
+                    "SEO Basics",
+                    "Accessibility"
+                ],
+                "assignments": [
+                    "Performance optimization",
+                    "SEO audit"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "Version Control",
+                    "Git Basics",
+                    "GitHub"
+                ],
+                "assignments": [
+                    "Git workflow practice",
+                    "Collaborative project"
+                ]
+            },
+            {
+                "weekNumber": 11,
+                "topics": [
+                    "Web Security",
+                    "HTTPS",
+                    "Cross-Site Scripting"
+                ],
+                "assignments": [
+                    "Security audit",
+                    "Implement security measures"
+                ]
+            },
+            {
+                "weekNumber": 12,
+                "topics": [
+                    "Final Project",
+                    "Portfolio Polish",
+                    "Deployment"
+                ],
+                "assignments": [
+                    "Complete portfolio website",
+                    "Deploy to hosting"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "UI/UX Design",
+        "resources": [
+            {
+                "title": "Design Thinking Guide",
+                "type": "article",
+                "url": "https://www.ideou.com/pages/design-thinking"
+            },
+            {
+                "title": "Figma Tutorials",
+                "type": "article",
+                "url": "https://help.figma.com/hc/en-us/articles/360040514413-Learn-design"
+            },
+            {
+                "title": "Color Theory Guide",
+                "type": "article",
+                "url": "https://www.toptal.com/designers/visual/color-theory"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "Design Thinking",
+                    "User Research",
+                    "Wireframing"
+                ],
+                "assignments": [
+                    "Conduct user interviews",
+                    "Create low-fidelity wireframes"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "Prototyping",
+                    "User Testing",
+                    "Design Systems"
+                ],
+                "assignments": [
+                    "Build interactive prototype",
+                    "Conduct usability tests"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Visual Design",
+                    "Color Theory",
+                    "Typography"
+                ],
+                "assignments": [
+                    "Create a style guide",
+                    "Design a landing page"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Interaction Design",
+                    "Microinteractions",
+                    "Animation"
+                ],
+                "assignments": [
+                    "Design interactive elements",
+                    "Create animations"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "User Experience",
+                    "Usability",
+                    "Accessibility"
+                ],
+                "assignments": [
+                    "Conduct usability testing",
+                    "Implement accessibility features"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "Design Tools",
+                    "Figma",
+                    "Sketch",
+                    "Adobe XD"
+                ],
+                "assignments": [
+                    "Create designs using Figma",
+                    "Prototype in Sketch"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "Design Systems",
+                    "Component Libraries",
+                    "Design Tokens"
+                ],
+                "assignments": [
+                    "Build a design system",
+                    "Create reusable components"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Final Project",
+                    "Portfolio Development",
+                    "Case Studies"
+                ],
+                "assignments": [
+                    "Complete a design project",
+                    "Develop portfolio case studies"
+                ]
+            }
+        ]
+    },
+    {
+        "referedTo": "MERN Stack",
+        "resources": [
+            {
+                "title": "MongoDB University",
+                "type": "link",
+                "url": "https://university.mongodb.com/"
+            },
+            {
+                "title": "Express.js Guide",
+                "type": "article",
+                "url": "https://expressjs.com/en/guide/routing.html"
+            },
+            {
+                "title": "React Documentation",
+                "type": "article",
+                "url": "https://reactjs.org/docs/getting-started.html"
+            }
+        ],
+        "data": [
+            {
+                "weekNumber": 1,
+                "topics": [
+                    "MongoDB Basics",
+                    "NoSQL Concepts",
+                    "Data Modeling"
+                ],
+                "assignments": [
+                    "Setup MongoDB Atlas",
+                    "Basic CRUD operations"
+                ]
+            },
+            {
+                "weekNumber": 2,
+                "topics": [
+                    "MongoDB Advanced",
+                    "Aggregation",
+                    "Indexing"
+                ],
+                "assignments": [
+                    "Complex queries",
+                    "Database optimization"
+                ]
+            },
+            {
+                "weekNumber": 3,
+                "topics": [
+                    "Express.js Fundamentals",
+                    "Routing",
+                    "Middleware"
+                ],
+                "assignments": [
+                    "Basic Express server",
+                    "Custom middleware"
+                ]
+            },
+            {
+                "weekNumber": 4,
+                "topics": [
+                    "Express.js Advanced",
+                    "Authentication",
+                    "Authorization"
+                ],
+                "assignments": [
+                    "JWT implementation",
+                    "Role-based access"
+                ]
+            },
+            {
+                "weekNumber": 5,
+                "topics": [
+                    "React Fundamentals",
+                    "Components",
+                    "Props",
+                    "State"
+                ],
+                "assignments": [
+                    "Component library",
+                    "State management exercise"
+                ]
+            },
+            {
+                "weekNumber": 6,
+                "topics": [
+                    "React Hooks",
+                    "Context API",
+                    "Custom Hooks"
+                ],
+                "assignments": [
+                    "Hook implementation",
+                    "Global state management"
+                ]
+            },
+            {
+                "weekNumber": 7,
+                "topics": [
+                    "React Router",
+                    "Navigation",
+                    "Protected Routes"
+                ],
+                "assignments": [
+                    "Multi-page application",
+                    "Auth routing"
+                ]
+            },
+            {
+                "weekNumber": 8,
+                "topics": [
+                    "Redux",
+                    "Actions",
+                    "Reducers",
+                    "Store"
+                ],
+                "assignments": [
+                    "Redux implementation",
+                    "State management"
+                ]
+            },
+            {
+                "weekNumber": 9,
+                "topics": [
+                    "Node.js Fundamentals",
+                    "Event Loop",
+                    "Modules"
+                ],
+                "assignments": [
+                    "Node.js server",
+                    "Module creation"
+                ]
+            },
+            {
+                "weekNumber": 10,
+                "topics": [
+                    "API Integration",
+                    "REST Architecture",
+                    "GraphQL"
+                ],
+                "assignments": [
+                    "RESTful API",
+                    "GraphQL server"
+                ]
+            },
+            {
+                "weekNumber": 11,
+                "topics": [
+                    "Testing",
+                    "Jest",
+                    "React Testing Library"
+                ],
+                "assignments": [
+                    "Unit tests",
+                    "Integration tests"
+                ]
+            },
+            {
+                "weekNumber": 12,
+                "topics": [
+                    "Deployment",
+                    "CI/CD",
+                    "Docker"
+                ],
+                "assignments": [
+                    "Deploy MERN app",
+                    "Container setup"
+                ]
+            },
+            {
+                "weekNumber": 13,
+                "topics": [
+                    "Performance Optimization",
+                    "Code Splitting",
+                    "Lazy Loading"
+                ],
+                "assignments": [
+                    "Performance audit",
+                    "Optimization implementation"
+                ]
+            },
+            {
+                "weekNumber": 14,
+                "topics": [
+                    "Final Project",
+                    "Full Stack Integration",
+                    "Documentation"
+                ],
+                "assignments": [
+                    "Complete MERN application",
+                    "Technical documentation"
+                ]
+            }
+        ]
+    }
+]

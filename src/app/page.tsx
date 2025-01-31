@@ -1,12 +1,14 @@
 "use client";
 import React from "react";
 import { motion } from "framer-motion";
-import { courseData } from "@/json/courses";
 import Link from "next/link";
 import { CourseCard } from "@/components/course-card";
+import GetCourses from "@/handdler/GetCourses";
 
 export default function HomePage() {
-  const courses = React.useMemo(() => courseData, []);
+  const result = GetCourses();
+  const data = result?.data;
+  const courses = React.useMemo(() => data, [data]);
 
   return (
     <div className="min-h-screen bg-[radial-gradient(ellipse_at_top_right,_var(--tw-gradient-stops))] from-blue-100 via-blue-50 to-white text-gray-800 relative overflow-hidden">
@@ -93,18 +95,18 @@ export default function HomePage() {
             Featured Courses
           </h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
-            {courses
-              .filter((data) => {
+            {/* {courses
+              .filter((data: any) => {
                 return (
                   data.level === "Beginner" ||
                   data.level === "Intermediate" ||
                   data.level === "Advanced"
                 );
               })
-              .slice(0, 4)
-              .map((course, index) => (
+              .slice(1, 5)
+              .map((course: any, index: number) => (
                 <CourseCard key={index} course={course} index={index} />
-              ))}
+              ))} */}
           </div>
         </motion.div>
 

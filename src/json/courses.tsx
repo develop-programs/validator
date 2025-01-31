@@ -83,4 +83,15 @@ export const courseData = [
     duration: "10 weeks",
     level: "Intermediate",
   },
+  {
+    id: "data-structures-algorithms",
+    title: "Data Structures & Algorithms",
+    slug: "data-structures-algorithms",
+    description:
+      "Master fundamental data structures and algorithms to ace coding interviews and optimize applications.",
+    image:
+      "https://miro.medium.com/v2/resize:fit:1400/format:webp/1*mIZzV7fAXXMS2bSpUFoLOw.png",
+    duration: "12 weeks",
+    level: "Advanced",
+  },
 ];
